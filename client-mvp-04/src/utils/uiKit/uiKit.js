@@ -150,6 +150,10 @@ const DevUiKit = () => {
 
         <Input placeholder={'Enter your email'} type={'email'} />
         <p className={'dev-comment'}>Default Input, components/common/input</p>
+
+        <br />
+        <Input placeholder={'Enter your email'} type={'email'} className={'new-input'} />
+        <p className={'dev-comment'}>New Input</p>
       </div>
 
       <div className={'text-field-icon-container'}>
