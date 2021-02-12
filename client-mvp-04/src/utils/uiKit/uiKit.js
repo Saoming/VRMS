@@ -4,6 +4,7 @@ import Button from '../../components/common/button/button';
 import confirmIcon from '../../assets/images/icons/confirm.svg';
 import projectIcon from '../../assets/images/icons/311.png';
 import gitHubIcon from '../../assets/images/icons/github.png';
+import plusIcon from '../../assets/images/icons/plus.svg'
 import RedirectLink from '../../components/common/link/link';
 import Input from '../../components/common/input/input';
 import ErrorMessage from '../../components/common/errorMessage/errorMessage';
@@ -14,6 +15,20 @@ import ProgressBar from '../../components/common/progressBar/progressBar';
 the application. UI elements created based on finalized v0.4 Style Guide.*/
 
 const DevUiKit = () => {
+
+  const currentSkills = [ "JavaScript", 
+                          "TypeScript", 
+                          "React", 
+                          "Angular", 
+                          "Java", 
+                          "Node.js", 
+                          "React Native", 
+                          "Vue", 
+                          "Python", 
+                          "HTML",
+                          "CSS",
+                          "LESS/SASS"
+    ];
   return (
     <div className="kit-container custom-scroll-bar">
       <div className={'kit-title'}>VRMS DEV UI-KIT</div>
@@ -152,9 +167,11 @@ const DevUiKit = () => {
         <p className={'dev-comment'}>Default Input, components/common/input</p>
 
         <br />
-        <img src={gitHubIcon} className={'text-field-icon'} alt={'gitHub'} />
-        <Input placeholder={'Current Skills'} type={'email'} className={'new-input'} />
-        <p className={'dev-comment'}>New Input</p>
+        <div className={'text-field-icon-container'}>
+          <img src={plusIcon} className={'text-field-icon-right'} alt={'Plus'} />
+          <Input currentSkills={currentSkills} placeholder={'* Current Skills'} type={'email'} className={'new-input'} />
+        </div>
+        <p className={'dev-comment'}>New Input with Plus Icons</p>
       </div>
 
       <div className={'text-field-icon-container'}>

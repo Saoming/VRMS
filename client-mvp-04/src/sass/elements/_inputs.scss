@@ -22,7 +22,9 @@
       outline: none;
     }
   }
+  
   .new-input {
+    padding: 10.5px 0;
     border: 0;
     border-bottom: 1px solid $dark-primary-color;
     &:focus {
@@ -42,6 +44,9 @@
     padding: 15.5px 13px 15.5px 50px;
     line-height: 22px;
   }
+  .new-input {
+    padding: 8px 0 ;
+  }
 
   .text-field-icon {
     width: 27px;
@@ -49,5 +54,12 @@
     position: absolute;
     left: 14px;
     top: 14px;
+  }
+  .text-field-icon-right {
+    width: 16px;
+    height: auto;
+    position: absolute;
+    right: 14px;
+    top: 8px;
   }
 }
