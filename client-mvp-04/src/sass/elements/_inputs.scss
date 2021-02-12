@@ -55,11 +55,19 @@
     left: 14px;
     top: 14px;
   }
-  .text-field-icon-right {
-    width: 16px;
-    height: auto;
+
+  button {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
     position: absolute;
     right: 14px;
-    top: 8px;
+    top: 10.5px;
+  }
+
+  .text-field-icon-right {
+    width: 18px;
+    height: auto;
   }
 }

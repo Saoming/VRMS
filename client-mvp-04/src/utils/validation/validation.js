@@ -4,3 +4,8 @@ export class Email {
     return value.search(pattern) !== -1;
   }
 }
+
+export const SkillsValidation =  ( value ) => {
+    const pattern = /^[a-zA-Z_ ]*$/;
+    return value.match(pattern);
+}

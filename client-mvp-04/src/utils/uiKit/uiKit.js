@@ -9,6 +9,7 @@ import RedirectLink from '../../components/common/link/link';
 import Input from '../../components/common/input/input';
 import ErrorMessage from '../../components/common/errorMessage/errorMessage';
 import ProgressBar from '../../components/common/progressBar/progressBar';
+import NewInput from '../../components/common/input/newInput';
 
 /***** DEV-UI-KIT FOR DEVELOPMENT ONLY *****/
 /*UI KIT helps devs determine, which UI elements will be used throughout
@@ -16,19 +17,6 @@ the application. UI elements created based on finalized v0.4 Style Guide.*/
 
 const DevUiKit = () => {
 
-  const currentSkills = [ "JavaScript", 
-                          "TypeScript", 
-                          "React", 
-                          "Angular", 
-                          "Java", 
-                          "Node.js", 
-                          "React Native", 
-                          "Vue", 
-                          "Python", 
-                          "HTML",
-                          "CSS",
-                          "LESS/SASS"
-    ];
   return (
     <div className="kit-container custom-scroll-bar">
       <div className={'kit-title'}>VRMS DEV UI-KIT</div>
@@ -168,8 +156,8 @@ const DevUiKit = () => {
 
         <br />
         <div className={'text-field-icon-container'}>
-          <img src={plusIcon} className={'text-field-icon-right'} alt={'Plus'} />
-          <Input currentSkills={currentSkills} placeholder={'* Current Skills'} type={'email'} className={'new-input'} />
+          <button type="submit"><img src={plusIcon} className={'text-field-icon-right'} alt={'Plus'} /></button>
+          <NewInput placeholder={'* Current Skills'} type={'email'} className={'new-input'} />
         </div>
         <p className={'dev-comment'}>New Input with Plus Icons</p>
       </div>
