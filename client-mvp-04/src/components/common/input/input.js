@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Input = ({ placeholder, type, onChange, autoComplete, dataTestid }) => {
+const Input = ({ placeholder, type, onChange, autoComplete, dataTestid, className }) => {
   if (!dataTestid) dataTestid = 'default-input';
+  const [value, setVal] = useState({input: ''});
+  console.log(value.input);
+  
   return (
     <div className="text-field-container">
       <input
@@ -11,6 +14,9 @@ const Input = ({ placeholder, type, onChange, autoComplete, dataTestid }) => {
         placeholder={placeholder}
         onChange={onChange}
         autoComplete={autoComplete}
+        className={className}
+        value={value.input}
+        onChange={(e) => setVal({input: e.target.value})}
       />
     </div>
   );

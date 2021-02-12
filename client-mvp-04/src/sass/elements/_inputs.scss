@@ -22,7 +22,16 @@
       outline: none;
     }
   }
+  .new-input {
+    border: 0;
+    border-bottom: 1px solid $dark-primary-color;
+    &:focus {
+      border: 0;
+      border-bottom: 1px solid $dark-primary-color;      
+    }
+  }
 }
+
 
 .text-field-icon-container {
   @extend .text-field-container;
